@@ -1,5 +1,5 @@
 {% set name = "harlequin-mysql" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/harlequin_mysql-{{ version }}.tar.gz
-  sha256: f184ed95c09777a9dbf4110cd5ac5ee06fd5b275fb1e30011500804713d7204b
+  sha256: 46ef42c5b658568f5340ee53c241cb1333f3e04914807c1f83741e83517878b3
 
 build:
   noarch: python
