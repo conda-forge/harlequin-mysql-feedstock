@@ -1,5 +1,5 @@
 {% set name = "harlequin-mysql" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/harlequin_mysql-{{ version }}.tar.gz
-  sha256: 8e1f8d391e0980bcb6fa257aca939a4ef35f0fa699fad9a03e4835169b6f4585
+  sha256: 7a5a82e5c2eb9383a30443d387a139a4509b111afc2fe935b619e6c73409ee7b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }},<4.0
-    - harlequin >=1.7,<3
-    - mysql-connector-python >=8.2.0,<9.0.0
+    - harlequin >=1.25.0,<3
+    - mysql-connector-python >=9.1.0,<10.0.0
 
 test:
   imports:
