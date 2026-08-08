@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: harlequin-mysql
-  version: 1.3.0
+  version: "1.3.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/harlequin_mysql-${{ version }}.tar.gz
-  sha256: 98840b0e03be1c16ea62c5bbae2e8b87cd16b25a7913c7239aee3a1c06143131
+  sha256: ec06c030888bb6e420448a96c83d9a8f7f7c1714c197ed2b9656fd1355e76dd0
 
 build:
   number: 0
